@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+🚀 Como Rodar o Projeto
+1. Clone o Repositório
+bash
+Copiar código
+git clone <URL_DO_REPOSITORIO>
+cd quiz-game
+2. Instale as Dependências
+Certifique-se de ter o Node.js instalado. Execute:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+bash
+Copiar código
+npm install
+3. Inicie o Servidor JSON
+O json-server será usado para fornecer as perguntas via API simulada. Certifique-se de que o arquivo db.json está na raiz do projeto e rode:
 
-## Available Scripts
+bash
+Copiar código
+json-server --watch db.json --port 3001
+O servidor estará disponível em http://localhost:3001/questions.
 
-In the project directory, you can run:
+4. Inicie o Aplicativo React
+Em outra aba do terminal, execute:
 
-### `npm start`
+bash
+Copiar código
+npm start
+O jogo estará disponível em http://localhost:3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✅ Requisitos Atendidos
+1. Interface Web
+Utilização de HTML5 e CSS3 para a base estrutural.
+Estilo responsivo utilizando Bootstrap.
+2. Funcionalidade com React
+Componentes React:
+Quiz.js: Componente principal que gerencia o estado do jogo.
+Question.js: Exibe cada pergunta e suas opções de resposta.
+Scoreboard.js: Mostra o progresso e a pontuação.
+Props: Dados são passados entre os componentes (Question recebe as perguntas como props).
+Hooks:
+useState: Para gerenciar estados como pontuação, progresso e estado finalizado do quiz.
+useEffect: Para buscar perguntas via HTTP no início do jogo.
+Listas: Renderização dinâmica de perguntas e respostas.
+Eventos: Captura de cliques nos botões de resposta e no botão "Reiniciar Quiz".
+3. Usabilidade e Heurísticas de Nielsen
+Visibilidade do status do sistema: Mostra progresso e pontuação em tempo real.
+Controle e liberdade do usuário: O usuário pode reiniciar o quiz ao final.
+Prevenção de erros: Respostas incorretas não causam interrupção no jogo; apenas são contabilizadas.
+Reconhecimento em vez de memorização: As opções de resposta são exibidas claramente.
+Estética e design minimalista: Interface limpa com destaque apenas para o essencial.
+4. Requisições HTTP
+Uso do Axios para buscar perguntas de um mock API (json-server).
+5. Configuração do Ambiente com NodeJS
+O ambiente foi configurado com Node.js e npm.
+Dependências gerenciadas via package.json.
