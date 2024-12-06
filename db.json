@@ -1,40 +1,63 @@
 {
-    "questions": [
-      {
-        "id": 1,
-        "question": "Qual é a capital do Brasil?",
-        "correctAnswer": "Brasília",
-        "answers": ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"]
-      },
-      {
-        "id": 2,
-        "question": "Qual é o maior planeta do Sistema Solar?",
-        "correctAnswer": "Júpiter",
-        "answers": ["Terra", "Marte", "Júpiter", "Saturno"]
-      },
-      {
-        "id": 3,
-        "question": "Quem pintou a Mona Lisa?",
-        "correctAnswer": "Leonardo da Vinci",
-        "answers": ["Michelangelo", "Leonardo da Vinci", "Rafael", "Donatello"]
-      },
-      {
-        "id": 4,
-        "question": "Qual é o elemento químico representado pelo símbolo O?",
-        "correctAnswer": "Oxigênio",
-        "answers": ["Ouro", "Osmium", "Oxigênio", "Óxido"]
-      },
-      {
-        "id": 5,
-        "question": "Em que ano o homem pisou na Lua pela primeira vez?",
-        "correctAnswer": "1969",
-        "answers": ["1965", "1969", "1971", "1975"]
-      },
-      {
-        "id": 6,
-        "question": "Em que ano aconteceu as olimpiadas no brasil?",
-        "correctAnswer": "2016",
-        "answers": ["2016", "2014", "2015", "2018"]
-      }
-    ]
-  }
+  "questions": [
+    {
+      "id": 1,
+      "question": "Qual é a capital do Brasil?",
+      "correctAnswer": "Brasília",
+      "answers": ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"]
+    },
+    {
+      "id": 2,
+      "question": "Qual é o maior planeta do Sistema Solar?",
+      "correctAnswer": "Júpiter",
+      "answers": ["Terra", "Marte", "Júpiter", "Saturno"]
+    },
+    {
+      "id": 3,
+      "question": "Quem pintou a Mona Lisa?",
+      "correctAnswer": "Leonardo da Vinci",
+      "answers": ["Michelangelo", "Leonardo da Vinci", "Rafael", "Donatello"]
+    },
+    {
+      "id": 4,
+      "question": "Qual é o elemento químico representado pelo símbolo O?",
+      "correctAnswer": "Oxigênio",
+      "answers": ["Ouro", "Osmium", "Oxigênio", "Óxido"]
+    },
+    {
+      "id": 5,
+      "question": "Em que ano o homem pisou na Lua pela primeira vez?",
+      "correctAnswer": "1969",
+      "answers": ["1965", "1969", "1971", "1975"]
+    },
+    {
+      "id": 6,
+      "question": "Em que ano aconteceu as olimpiadas no brasil?",
+      "correctAnswer": "2016",
+      "answers": ["2016", "2014", "2015", "2018"]
+    },
+    {
+      "id": 7,
+      "question": "Qual é o país com o maior número de Copas do Mundo de futebol?",
+      "correctAnswer": "Brasil",
+      "answers": ["Brasil", "Alemanha", "Itália", "Argentina"]
+    },
+    {
+      "id": 8,
+      "question": "Quantos lados tem um hexágono?",
+      "correctAnswer": "6",
+      "answers": ["6", "5", "7", "8"]
+    },
+    {
+      "question": "Quem escreveu 'Dom Quixote'?",
+      "correctAnswer": "Miguel de Cervantes",
+      "answers": ["Miguel de Cervantes", "William Shakespeare", "Fernando Pessoa", "Machado de Assis"]
+    },
+    {
+      "id": 10,
+      "question": "Qual é a capital da Austrália?",
+      "correctAnswer": "Canberra",
+      "answers": ["Canberra", "Sydney", "Melbourne", "Brisbane"]
+    }
+  ]
+}
